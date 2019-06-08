@@ -8,7 +8,11 @@ class User(models.Model):
     password = models.CharField(max_length=100)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
+    is_admin = models.BooleanField(default=False)
     bio = models.TextField(blank=True)
     birthday = models.DateField(blank=True, null=True)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.email
