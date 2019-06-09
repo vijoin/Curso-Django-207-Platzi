@@ -2,3 +2,4 @@ Django207/
 manage.py
 *.pyc
 script_users.py
+*migrations
