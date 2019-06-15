@@ -3,3 +3,5 @@ manage.py
 *.pyc
 script_users.py
 *migrations
+.idea
+db.sqlite3
